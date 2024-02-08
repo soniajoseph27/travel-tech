@@ -1,0 +1,44 @@
+.contactform {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contactform h1 {
+    margin-bottom: 20px;
+  }
+  
+  .contactform form {
+    display: grid;
+    grid-gap: 10px;
+  }
+  
+  .contactform input,
+  .contactform textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contactform button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3bd154;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  .contactform button:hover {
+    background-color: #80d18d;
+  }
+  
+  .contactform textarea {
+    resize: vertical;
+  }
+  

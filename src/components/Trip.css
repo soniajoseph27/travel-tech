@@ -1,0 +1,63 @@
+/* Regular styles for screens larger than 1024px */
+.trip-card {
+  width: calc(350px - 20px); /* Adjust width as needed */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 10px 20px 10px; /* Adjust margin as needed */
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: inline-block; /* Ensures cards are displayed in a row */
+  vertical-align: top; /* Aligns cards at the top */
+}
+
+.t-image {
+  margin-bottom: 10px;
+}
+
+.t-image img:hover {
+  transform: scale(1.3); /* Apply scale transformation on hover */
+}
+
+.t-image img {
+  width: 100%;
+  height: 120%;
+  border-radius: 8px;
+}
+
+.trip-card h4 {
+  margin-bottom: 10px;
+  font-size: 16px; /* Adjust font size as needed */
+  color: #333;
+}
+
+.trip-card p {
+  font-size: 14px; /* Adjust font size as needed */
+  color: #666;
+}
+
+/* Media query for screens with a maximum width of 555px */
+@media screen and (max-width: 555px) {
+  .trip-card {
+    width: calc(100% - 20px); /* Adjust width for smaller screens */
+    margin: 0 auto 20px auto; /* Center the card and adjust margin for stacking */
+    display: inline-block; /* Ensures cards are displayed in a row */
+    vertical-align: top; /* Aligns cards at the top */
+  }
+
+  .trip-card h4 {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .trip-card p {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Media query for screens with a maximum width of 1024px */
+@media screen and (max-width: 1024px) {
+  .trip-card {
+    width: calc(50% - 20px); /* Adjust width for medium screens */
+    margin: 0 auto 20px auto; /* Center the card and adjust margin */
+  }
+}

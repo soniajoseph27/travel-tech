@@ -1,0 +1,95 @@
+.destination {
+    text-align: center;
+  }
+  
+  .first-dest {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .first-dest-reverse {
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-top:20px;
+  }
+  
+  .dest-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .dest-text h2 {
+    color: #333;
+    margin-left: 250px;
+  }
+  
+  .dest-text p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .image {
+    display: flex;
+    justify-content: space-between; /* Adjust this property to change the space between images */
+    padding-top: 60px;
+  }
+  
+  .image img {
+    width: 250px;
+    height: 85%;
+    border-radius: 3px;
+    box-shadow: -1px 1px 62px -18px rgb(0, 0, 0, 0, 0.19);
+    margin-bottom: 10px;
+    margin:10px;
+  }
+  @media screen and (max-width: 555px) {   /*mobile view */
+    .destination {
+      text-align: center;
+    }
+    
+    .first-dest,
+    .first-dest-reverse {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+    
+    .first-dest-reverse {
+      margin-top: 30px;
+      padding-top: 20px;
+    }
+    
+    .dest-text {
+      text-align: center;
+    }
+    
+    .dest-text h2 {
+      color: #333;
+      margin-left: 0; /* Reset margin for smaller screens */
+    }
+    
+    .dest-text p {
+      color: #666;
+      line-height: 1.6;
+    }
+    
+    .image {
+      display: flex;
+      flex-wrap: wrap; /* Ensure images wrap properly */
+      justify-content: center; /* Center align images */
+      padding-top: 20px; /* Adjust padding */
+    }
+    
+    .image img {
+      width: calc(50% - 20px); /* Adjust image width for smaller screens */
+      max-width: 250px; /* Set maximum width */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 3px;
+      box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+      margin: 10px; /* Adjust margin */
+    }
+    
+  }
+  
